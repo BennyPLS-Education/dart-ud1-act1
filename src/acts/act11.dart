@@ -30,7 +30,7 @@ bool isPrime(int number) {
     return false;
   }
 
-  for (var i = 2; i < sqrt(number); i++) {
+  for (var i = 2; i <= sqrt(number).ceil(); i++) {
     if (number % i == 0) {
       return false;
     }
